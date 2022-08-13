@@ -1,11 +1,23 @@
 <!doctype html>
 <html>
     <body>
-        <form>
-            name:<input type="text" >
-            email:<input type="email">
-            <button type="submit">submit</button>
+        <form action>
+            name:<input type="text" id="name" >
+            email:<input type="email" id="email">
+            password:<input type="password" id="password">
+
+            <button type="submit" onclick="add">submit</button>
 
         </form>
+        <script>
+var name=document.getElementById("name");
+var email=document.getElementById("email");
+var password=document.getElementById("password");
+function add(){
+    document.write( name+""+name);
+    document.write(email+""+email);
+    document.write(password+""+password);
+}
+        </script>
     </body>
 </html>
